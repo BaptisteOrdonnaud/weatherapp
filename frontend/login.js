@@ -7,7 +7,7 @@ document.querySelector("#register").addEventListener('click', () => {
         password: document.querySelector('#registerPassword').value,
     }
 
-    fetch('http://localhost:3000/users/signup', {
+    fetch('https://weatherapp-back-nu.vercel.app/users/signup', {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
 
@@ -29,7 +29,7 @@ document.querySelector("#connection").addEventListener('click', () => {
         password: document.querySelector('#connectionPassword').value,
     }
 
-    fetch('http://localhost:3000/users/signin', {
+    fetch('https://weatherapp-back-nu.vercel.app/users/signin', {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
 
